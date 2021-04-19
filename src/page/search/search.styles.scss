@@ -1,0 +1,108 @@
+.searchPage {
+
+    &__header {
+        display: flex;
+        align-items: flex-start;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 100;
+        padding: 30px;
+        border-bottom: 1px solid lightgray;
+    }
+
+    &__logo {
+        object-fit: contain;
+        height: 36px;
+        width: 92px;
+        margin-right: 50px;
+    }
+
+    &__headerBody {
+
+        > .search {
+
+            > .search__input {
+                margin-top: 0;
+                width: unset;
+                margin: unset;
+                max-width: unset;
+            }
+        }
+    }
+
+    &__options {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: grey;
+
+        &Left, &Right {
+            display: flex;
+        }
+    }
+
+    &__option {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+
+        & a {
+            margin-left: 5px;
+            text-decoration: none;
+            color: gray;
+        }
+    }
+
+    &__results {
+        max-width: 650px;
+        margin-bottom: 100px;
+        margin-left: 175px;
+    }
+
+    &__resultCount {
+        color: #70757a;
+        font-size: 14px;
+        line-height: 43px;
+    }
+
+    &__result {
+        margin-bottom: 40px;
+        line-height: 1.5;
+
+        &Link {
+            color: #202124;
+            line-height: 1.3;
+            text-decoration: none;
+            font-size: 14px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        &Title {
+            text-decoration: none;
+
+            > h2 {
+                font-size: 20px;
+                font-weight: 500;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &Description {
+            color: #4d5156;
+            line-height: 1.58;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+    }
+}
+
+
+
+
