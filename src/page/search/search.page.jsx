@@ -4,26 +4,24 @@ import SearchBox from '../../component/search-box/search-box.component';
 import { useStateValue } from '../../context/search/stateProvider';
 import useGoogleSearch from '../../hook/google-search/googleSearch';
 
-import SearchIcon from '@material-ui/icons/Search';
-import DescriptionIcon from '@material-ui/icons/Description';
-import ImageIcon from '@material-ui/icons/Image';
-import LocalOfferIcon from '@material-ui/icons/LocalOffer';
-import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
+import SearchOutlinedIcon from '@material-ui/icons/SearchOutlined';
+import DescriptionOutlinedIcon from '@material-ui/icons/DescriptionOutlined';
+import ImageOutlinedIcon from '@material-ui/icons/ImageOutlined';
+import LocalOfferOutlinedIcon from '@material-ui/icons/LocalOfferOutlined';
+import VideoLibraryOutlinedIcon from '@material-ui/icons/VideoLibraryOutlined';
+import MoreVertOutlinedIcon from '@material-ui/icons/MoreVertOutlined';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
-import response from '../../dummyResponse';
-
+import response from '../../config/dummyResponse';
 
 import { Link } from 'react-router-dom';
 
 const SearchPage = () => {
 
     const [{ term }, dispatch] = useStateValue();
-    // const { data } = useGoogleSearch(term);
+    const { data } = useGoogleSearch(term);
 
-    const data = response;
-    
+    // const data = response;
 
     return (
         <div className="searchPage">
@@ -40,32 +38,32 @@ const SearchPage = () => {
 
                         <div className="searchPage__optionsLeft">
                             <div className="searchPage__option">
-                                <SearchIcon />
+                                <SearchOutlinedIcon className="icon" />
                                 <Link to="/all">All</Link>
                             </div>
 
                             <div className="searchPage__option">
-                                <DescriptionIcon />
+                                <DescriptionOutlinedIcon className="icon" />
                                 <Link to="/all">News</Link>
                             </div>
 
                             <div className="searchPage__option">
-                                <ImageIcon />
+                                <ImageOutlinedIcon className="icon" />
                                 <Link to="/all">Images</Link>
                             </div>
 
                             <div className="searchPage__option">
-                                <LocalOfferIcon />
+                                <LocalOfferOutlinedIcon className="icon" />
                                 <Link to="/all">Shopping</Link>
                             </div>
 
                             <div className="searchPage__option">
-                                <VideoLibraryIcon />
+                                <VideoLibraryOutlinedIcon className="icon" />
                                 <Link to="/all">Videos</Link>
                             </div>
 
                             <div className="searchPage__option">
-                                <MoreVertIcon />
+                                <MoreVertOutlinedIcon className="icon" />
                                 <Link to="/all">More</Link>
                             </div>
                         </div>
