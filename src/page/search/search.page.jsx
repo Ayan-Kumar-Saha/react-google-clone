@@ -19,9 +19,9 @@ import { Link } from 'react-router-dom';
 const SearchPage = () => {
 
     const [{ term }, dispatch] = useStateValue();
-    const { data } = useGoogleSearch(term);
+    // const { data } = useGoogleSearch(term);
 
-    // const data = response;
+    const data = response;
 
     return (
         <div className="searchPage">
