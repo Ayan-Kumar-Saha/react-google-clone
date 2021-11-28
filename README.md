@@ -1,4 +1,4 @@
-## Google Clone 1.0 🎉
+## Google Clone 2.0 🎉
 #### a minimal clone project of our beloved search engine
 
 #### Checkout the live demo 👉 [here](https://clone-c61bf.web.app/)
